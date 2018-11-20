@@ -1,0 +1,3 @@
+#PBS -j oe -o pi.stdout -l nodes=4:ppn=8 -q pp
+
+mpiexec -machinefile $PBS_NODEFILE /home/s18043158/mpi_examples/pi 4000000
